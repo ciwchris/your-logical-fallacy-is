@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.ionicframework.logicalfallacy405774" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Logical Fallacy</name>
+  <description>
+        Simple mobile app for displaying yourlogicalfallacyis.com content.
+    </description>
+  <author email="christopher.lopes@gmail.com" href="https://github.com/ciwchrist">
+      Christopher Lopes
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <icon src="www/img/hero-hdpi.png" />
+  <icon src="www/img/hero-mdpi.png" platform="android" density="mdpi" />
+  <icon src="www/img/hero-hdpi.png" platform="android" density="hdpi" />
+  <icon src="www/img/hero-xhdpi.png" platform="android" density="xhdpi" />
+  <icon src="www/img/hero-xxhdpi.png" platform="android" density="xxhdpi" />
+</widget>

@@ -1,0 +1,6 @@
+body, h1 { color: #444; text-align: center; }
+.top { background-color:#95e8fa;padding: 20px; }
+.name { padding-top: 20px; padding-bottom: 30px; }
+.bottom { background-color:#dff;padding-top:10px; }
+p { font-size:15pt; }
+.bottom p { text-align: left; }

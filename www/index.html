@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Your Logical Fallacy Is</title>
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/data.json"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <div ng-controller="main" ng-init="init()">
+    <ion-pane>
+      <ion-content scrollbar-y="false" on-scroll-complete="scrollingComplete()">
+
+        <ion-slide-box auto-play="false" show-pager="false" does-continue="true" active-slide="activeSlide" on-slide-changed="slideChanged()">
+            <ion-slide ng-repeat="d in data">
+                <div page-box class="box top">
+                    <img ng-src="img/{{d.image}}" />
+                    <h1 class="name">{{d.name}}</h1>
+                    <p>
+                        {{d.description}}
+                    </p>
+                </div>
+                <div page-box class="box bottom">
+                    <h3>Explanation</h3>
+                    <p>
+                        {{d.explanation}}
+                    </p>
+                    <h3>Example</h3>
+                    <p>
+                        {{d.example}}
+                    </p>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+      </ion-content>
+    </ion-pane>
+    </div>
+  </body>
+</html>
