@@ -3,7 +3,8 @@ node_js:
 - '0.10'
 before_install: npm install -g cordova ionic
 install: npm install
-before_script: ionic build android
+before_script: ionic platform add android
+script: ionic build android
 before_deploy: git fetch --tags
 deploy:
   provider: releases
