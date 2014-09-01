@@ -15,7 +15,7 @@ deploy:
   provider: releases
   api_key:
     secure: fc7c074e60236b9c70c0fddc3734e9aa55a8db54
-  file: platforms/android/ant-build/LogicalFallacy-debug.apk
+  file: platforms/android/ant-build/LogicalFallacy.apk
   skip_cleanup: true
   on:
     tags: true
