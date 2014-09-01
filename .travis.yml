@@ -7,7 +7,7 @@ before_script: ionic build android
 deploy:
   provider: releases
   api_key:
-    secure: PSEdyEWHg2hWHQjpdb6qiS6RlmLh/ctCEXTbQjNGFIOR+NqqBCyHMbwhocWZEkpkADgTRQs86ee909cJTHcg6cgBG/1PgwHFXqAafxT0fBbSKYv+7fu5mFPkj/O2lj4rx/dvK+t/wEYa+WEg41JauRpACcpP83XGg6jlf3oqOXs=
+    secure: fc7c074e60236b9c70c0fddc3734e9aa55a8db54
   file: platforms/android/ant-build/LogicalFallacy-debug.apk
   on:
     repo: ciwchris/your-logical-fallacy-is
