@@ -1,7 +1,7 @@
 {
-  "name": "logical-fallacy",
-  "version": "1.0.0",
-  "description": "logical-fallacy: An Ionic project",
+  "name": "Your Logical Fallacy Is",
+  "version": "0.0.1",
+  "description": "Ionic mobile app for yourlogicalfallacyis.com",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
