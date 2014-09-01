@@ -9,8 +9,9 @@ before_install: npm install -g cordova ionic
 install: npm install
 before_script: ionic platform android
 script: ionic build android
-after_script: cp platforms/android/ant-build/LogicalFallacy-debug-unaligned.apk platforms/android/ant-build/LogicalFallacy.apk
-before_deploy: git fetch --tags
+before_deploy:
+    - git fetch --tags
+    - cp platforms/android/ant-build/LogicalFallacy-debug-unaligned.apk platforms/android/ant-build/LogicalFallacy.apk
 deploy:
   provider: releases
   api_key:
