@@ -1,6 +1,13 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
 before_install: npm install -g cordova ionic
 install: npm install
 before_script: ionic build android
+deploy:
+  provider: releases
+  api_key:
+    secure: PSEdyEWHg2hWHQjpdb6qiS6RlmLh/ctCEXTbQjNGFIOR+NqqBCyHMbwhocWZEkpkADgTRQs86ee909cJTHcg6cgBG/1PgwHFXqAafxT0fBbSKYv+7fu5mFPkj/O2lj4rx/dvK+t/wEYa+WEg41JauRpACcpP83XGg6jlf3oqOXs=
+  file: platforms/android/ant-build/LogicalFallacy-debug.apk
+  on:
+    repo: ciwchris/your-logical-fallacy-is
