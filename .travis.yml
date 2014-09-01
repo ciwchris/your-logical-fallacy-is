@@ -3,7 +3,7 @@ node_js:
 - '0.10'
 before_install: npm install -g cordova ionic
 install: npm install
-before_script: ionic platform add android
+before_script: ionic platform android
 script: ionic build android
 before_deploy: git fetch --tags
 deploy:
@@ -13,5 +13,6 @@ deploy:
   file: platforms/android/ant-build/LogicalFallacy-debug.apk
   skip_cleanup: true
   on:
+    tags: true
     all_branches: true
     repo: ciwchris/your-logical-fallacy-is
