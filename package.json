@@ -1,6 +1,6 @@
 {
   "name": "your-logical-fallacy-is",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "Ionic mobile app for yourlogicalfallacyis.com",
   "dependencies": {
     "gulp": "^3.5.6",
