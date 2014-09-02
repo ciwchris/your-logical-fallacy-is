@@ -23,13 +23,10 @@
     },
     "installed_plugins": {
         "com.ionic.keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.yourlogicalfallacyis792819"
-        },
-        "org.apache.cordova.console": {
-            "PACKAGE_NAME": "com.ionicframework.yourlogicalfallacyis792819"
+            "PACKAGE_NAME": "com.christopherlopes.yourlogicalfallacyis"
         },
         "org.apache.cordova.device": {
-            "PACKAGE_NAME": "com.ionicframework.yourlogicalfallacyis792819"
+            "PACKAGE_NAME": "com.christopherlopes.yourlogicalfallacyis"
         }
     },
     "dependent_plugins": {}
