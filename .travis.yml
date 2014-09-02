@@ -14,6 +14,7 @@ before_script:
     - cordova platform add android
     - cp platforms/AndroidManifest.xml platforms/android/AndroidManifest.xml
     - git fetch --tags
+    - git log --graph -10 --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m" |cat
 script: cordova build --release android
 # Doesn't seem to exist on travis ci yet
 #before_deploy: zipalign -v 4 platforms/android/ant-build/LogicalFallacy-release-unsigned.apk platforms/android/ant-build/LogicalFallacy.apk
