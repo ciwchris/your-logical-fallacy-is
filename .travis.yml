@@ -5,15 +5,15 @@ android:
     - android-19
 node_js:
 - '0.10'
-before_install: npm install -g cordova ionic
+before_install:
+    - git fetch --tags
+    - npm install -g cordova ionic
 install: npm install
 before_script:
     - ionic platform android
     - cp platforms/AndroidManifest.xml platforms/android/AndroidManifest.xml
 script: cordova build --release android
-before_deploy:
-    - git fetch --tags
-    - zipalign -v 4 platforms/android/ant-build/LogicalFallacy-release-unsigned.apk platforms/android/ant-build/LogicalFallacy.apk
+before_deploy: zipalign -v 4 platforms/android/ant-build/LogicalFallacy-release-unsigned.apk platforms/android/ant-build/LogicalFallacy.apk
 deploy:
   provider: releases
   api_key:
