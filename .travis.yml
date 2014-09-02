@@ -18,6 +18,7 @@ before_script:
 script: cordova build --release android
 # Doesn't seem to exist on travis ci yet
 #before_deploy: zipalign -v 4 platforms/android/ant-build/LogicalFallacy-release-unsigned.apk platforms/android/ant-build/LogicalFallacy.apk
+before_deploy: cp platforms/android/ant-build/LogicalFallacy-release-unsigned.apk platforms/android/ant-build/LogicalFallacy.apk
 deploy:
   provider: releases
   api_key:
